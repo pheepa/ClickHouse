@@ -1743,13 +1743,13 @@ Example:
 
 ``` sql
 SELECT
-    arraySymmetricDifference([1, 2], [1, 2], [1, 2]) AS empty_symmetric_difference
-    arraySymmetricDifference([1, 2], [1, 2], [1, 3]) AS non_empty_symmetric_difference,
+    arraySymmetricDifference([1, 2], [1, 2], [1, 2]) AS empty_symmetric_difference,
+    arraySymmetricDifference([1, 2], [1, 2], [1, 3]) AS non_empty_symmetric_difference
 ```
 
 ``` text
 ┌─empty_symmetric_difference─┬─non_empty_symmetric_difference─┐
-│ []                         │ [3]                            │
+│ []                         │ [2, 3]                         │
 └────────────────────────────┴────────────────────────────────┘
 ```
 
